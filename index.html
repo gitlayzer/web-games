@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页游戏合集</title>
+<style>
+  :root { color-scheme: dark; --bg: #0e1013; --card: #171a1f; --line: #2a2f36; --text: #e8e4da; --dim: #9aa3ab; --accent: #ffb347; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif; line-height: 1.6; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 28px; margin: 0 0 8px; }
+  p.sub { color: var(--dim); margin: 0 0 32px; }
+  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  a.game { display: block; padding: 18px 20px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; color: inherit; text-decoration: none; transition: border-color .15s; }
+  a.game:hover, a.game:focus-visible { border-color: var(--accent); outline: none; }
+  .name { font-size: 18px; font-weight: 600; }
+  .path { color: var(--accent); font-family: ui-monospace, monospace; font-size: 13px; }
+  .desc { color: var(--dim); font-size: 14px; margin-top: 4px; }
+  footer { color: var(--dim); font-size: 13px; margin-top: 32px; }
+  footer a { color: var(--dim); }
+</style>
+</head>
+<body>
+<main>
+  <h1>网页游戏合集</h1>
+  <p class="sub">三个单文件 3D 网页游戏，点击进入。</p>
+  <ul>
+    <li><a class="game" href="jimao-3a/">
+      <div class="name">几猫 3A 大作 <span class="path">/jimao-3a/</span></div>
+      <div class="desc">港区动作冒险</div>
+    </a></li>
+    <li><a class="game" href="qq-speed/">
+      <div class="name">飞车 3D <span class="path">/qq-speed/</span></div>
+      <div class="desc">竞速漂移，QQ 飞车同人致敬</div>
+    </a></li>
+    <li><a class="game" href="cf-transport-ship/">
+      <div class="name">运输船 <span class="path">/cf-transport-ship/</span></div>
+      <div class="desc">FPS 团队枪战，穿越火线同人致敬</div>
+    </a></li>
+  </ul>
+  <footer>
+    飞车 3D 与运输船源码来自 <a href="https://github.com/riba2534/claude-opus-5-5-demo">riba2534/claude-opus-5-5-demo</a>，与原厂无关。
+  </footer>
+</main>
+</body>
+</html>
